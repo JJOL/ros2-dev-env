@@ -1,0 +1,4 @@
+# Ignore Compiled Libs and Programs and Logs
+build
+log
+install
