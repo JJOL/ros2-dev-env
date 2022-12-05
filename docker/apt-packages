@@ -1,0 +1,14 @@
+# software-properties-common
+curl 
+unzip 
+sed 
+sudo
+ssh
+git 
+bash 
+xz-utils 
+libglvnd0
+tmux
+ros-noetic-desktop-full
+ros-galactic-desktop
+

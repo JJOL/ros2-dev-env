@@ -1,0 +1,28 @@
+  {
+    "name": "ROSIE-ROS2",
+    //"image": "mcr.microsoft.com/devcontainers/base:0-jammy",
+    "dockerFile": "../Dockerfile",
+    // Use 'forwardPorts' to make a list of ports inside the container available locally.
+    // "forwardPorts": [],
+  
+    // Use 'postCreateCommand' to run commands after the container is created.
+    // "postCreateCommand": "uname -a",
+  
+    // Set `remoteUser` to `root` to connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
+    "remoteUser": "vscode",
+    "features": {
+      "ghcr.io/devcontainers/features/git:1": {},
+      "ghcr.io/devcontainers/features/github-cli:1": {},
+      // "ghcr.io/devcontainers/features/nvidia-cuda:1": {},
+      "ghcr.io/devcontainers/features/sshd:1": {},
+      //"ghcr.io/devcontainers-contrib/features/heroku-cli:1": {},
+      // "ghcr.io/devcontainers/features/aws-cli:1": {},
+      "ghcr.io/devcontainers/features/python:1": {}
+    },
+    
+    "runArgs": ["--privileged"],
+    // "extensions": ["dart-code.flutter"],
+    "workspaceMount": "source=${localWorkspaceFolder}/workspace,target=/home/developer/workspace,type=bind,consistency=delegated",
+    "workspaceFolder": "/home/developer/workspace"
+  }
+  
